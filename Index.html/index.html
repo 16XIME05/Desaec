@@ -1,0 +1,280 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DESAEC |Desazolves Sanitarios</title>
+    <style>
+        /* Estilos CSS BÁSICOS */
+        :root {
+            --color-principal: #020b5c; /* Verde vibrante */
+            --color-secundario: #FF9800; /* Naranja */
+            --color-fondo: #f4f4f4; /* Gris claro para el fondo */
+            --color-texto: #333; /* Gris oscuro para el texto */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+        }
+
+        /* --- ESTILOS DEL ENCABEZADO (Logo a la derecha) --- */
+        header {
+            background-color: var(--color-principal);
+            color: white;
+            padding: 15px 0;
+        }
+
+        .header-container {
+            width: 80%;
+            margin: auto;
+            display: flex; /* Habilitamos Flexbox */
+            justify-content: space-between; /* Mueve los bloques a los extremos */
+            align-items: center; /* Centrado vertical */
+        }
+
+        /* Bloque de Texto y Navegación (Izquierda) */
+        .header-left {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .header-branding h1 {
+            margin: 0;
+            font-size: 2.0em; /* Tamaño del nombre */
+            text-transform: uppercase;
+        }
+
+        .header-slogan p {
+            margin: 0;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 10px; /* Espacio antes de la navegación */
+        }
+        
+        /* Navegación */
+        nav {
+            margin-top: 5px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0 8px;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+        
+        /* Logo (Derecha) */
+        .logo-img {
+            height: 180px; /* Tamaño GRANDE del logo */
+            width: auto;
+            margin-left: 20px; /* Espacio a la izquierda del logo */
+            /* Se alinea automáticamente a la derecha por el 'justify-content: space-between' */
+        }
+        
+        /* La foto auxiliar ya no se usa, pero la ocultamos por si acaso */
+        .header-photo {
+            display: none;
+        }
+        /* --- FIN ESTILOS DEL ENCABEZADO --- */
+
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .hero {
+            background-color: var(--color-secundario);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .hero h2 {
+            margin-top: 0;
+            font-size: 2em;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+        
+        .about-us {
+            background-color: white;
+            padding: 30px;
+            border-left: 5px solid var(--color-secundario);
+            margin-bottom: 20px;
+        }
+        .about-us h2 {
+            color: var(--color-principal);
+        }
+
+        .services-grid {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .service-item {
+            flex: 1 1 300px; /* Permite 3-4 servicios por fila */
+            min-width: 300px; 
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-top: 5px solid var(--color-principal);
+            text-align: center;
+        }
+        
+        .service-item img {
+            max-width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            color: var(--color-secundario);
+            margin-top: 0;
+            font-size: 1.1em;
+        }
+        
+        .call-to-action {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .btn {
+            background-color: var(--color-principal);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #010246;
+        }
+
+        footer {
+            background-color: var(--color-principal);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            
+            <div class="header-left">
+                
+                <div class="header-branding">
+                  <h1>DESAEC</h1>
+                </div>
+                
+                <div class="header-slogan">
+                    
+                </div>
+
+                <nav>
+                    <a href="#nosotros">Nosotros</a> |
+                    <a href="#servicios">Servicios</a> |
+                    <a href="#cobertura">Cobertura</a> |
+                    <a href="#contacto">Contacto</a>
+                </nav>
+            </div>
+            
+            <img src="logo.jpg" alt="Logo de DESAEC" class="logo-img">
+            
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>¡Expertos en Desazolve y Destape de drenaje!</h2>
+            <p>Atención inmediata y servicio profesional las 24h.</p>
+        </div>
+    </section>
+
+    <section id="nosotros" class="container about-us">
+        <h2>¿Por qué elegir DESAEC?</h2>
+        <p>En DESAEC, entendemos que los problemas de drenaje y fosas son  urgentes y estresantes. Por eso, nuestro enfoque va más allá del servicio técnico nos importa profundamente solucionar sus problemas de raíz, con rapidez, eficiencia y el trato profesional que usted merece.</p>
+        <p>Somos su aliado confiable en Morelos.</p>
+    </section>
+
+    <section id="servicios" class="container">
+        <h1>Nuestros Servicios</h1>
+        <div class="services-grid">
+            
+            <div class="service-item">
+                <img src="fosa.jpg" alt="Desazolve de Fosas Sépticas">
+                <h3>Desazolve de Fosas Sépticas</h3>
+                <p>Extracción y manejo adecuado de lodos y residuos. Mantenimiento preventivo para evitar desbordes.</p>
+            </div>
+            
+            <div class="service-item">
+                <img src="Drenaje.jpg" alt="Destape de Drenaje">
+                <h3>Destape de Drenaje</h3>
+                <p>Eliminación de obstrucciones en tuberías y drenajes con equipo especializado. ¡Flujo libre garantizado!</p>
+            </div>
+            
+            <div class="service-item">
+                <img src="Trampa.jpg" alt="Limpieza de Trampas de Grasa">
+                <h3>Limpieza de Trampas de Grasa</h3>
+                <p>Mantenimiento esencial para restaurantes y cocinas industriales. Evite obstrucciones y multas.</p>
+            </div>
+
+            <div class="service-item">
+                <img src="tinacos2.jpg" alt="Limpieza de Cisternas y Tinacos">
+                <h3>Limpieza y Desinfección de Cisternas y Tinacos</h3>
+                <p>Lavado profundo y desinfección de depósitos de agua. ¡Agua limpia y segura para su hogar o negocio!</p>
+            </div>
+
+            <div class="service-item">
+                <img src="imagen7.jpg" alt="Venta de Bacteria (Biológicos)">
+                <h3>Venta de Bacteria </h3>
+                <p>Productos biológicos para el mantenimiento de fosas sépticas y trampas de grasa. ¡Solución ecológica y eficiente!</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+    <section id="cobertura" class="container">
+        <h2>Cobertura Total en Morelos 🗺️</h2>
+        <p>Atendemos servicios de emergencia y programados en todo el estado de Morelos las 24h</p>
+    </section>
+
+    <section id="contacto" class="call-to-action">
+        <p>¿Necesitas un servicio urgente o quieres cotizar sin compromiso?</p>
+        <a href="https://wa.me/527771378487" target="_blank" class="btn">💬 Enviar Mensaje por WhatsApp</a>
+        <p>O si lo prefiere, llame al: <a href="tel:7771378487" style="color: var(--color-principal); font-weight: bold;">7771378487</a></p>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DESAEC. Todos los derechos reservados.</p>
+            <p>Teléfono: <a href="tel:7771378487" style="color: white; text-decoration: none;">7771378487</a></p>
+        </div>
+    </footer>
+
+</body>
+</html>
